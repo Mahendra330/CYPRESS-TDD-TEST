@@ -1,0 +1,26 @@
+{
+  "name": "cypress-tdd-test",
+  "version": "1.0.0",
+  "description": "Cypress Test with TDD Framework",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:update-snapshots": "cypress run --env updateSnapshots=true",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:electron": "cypress run --browser electron",
+    "cy:dashboard-run": "cypress run --record --key 213bc60a-1eb4-4ee4-9471-eb89978f2610",
+    "Start-jenkins-service": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
+  },
+  "keywords": [
+    "Cypress",
+    "TDD"
+  ],
+  "author": "Mahendra Kumar Barik",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^4.5.0",
+    "cypress-image-snapshot": "^3.1.1"
+  }
+}
